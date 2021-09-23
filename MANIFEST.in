@@ -1,7 +1,7 @@
-recursive-include oasys *.pyx
-recursive-include oasys *.py
+recursive-include orangecontrib *.pyx
+recursive-include orangecontrib *.py
 
-recursive-include oasys/ml/widgets *.png *.svg *.ico *.jpg *.bmp *.dat
+recursive-include orangecontrib/ml/widgets *.png *.svg *.ico *.jpg *.bmp *.dat
 
 include README.md
 include LICENSE.pdf

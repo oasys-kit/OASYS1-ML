@@ -92,19 +92,19 @@ INSTALL_REQUIRES = (
 PACKAGES = find_packages(exclude=('*.tests', '*.tests.*', 'tests.*', 'tests'))
 
 PACKAGE_DATA = {
-    "oasys.ml.util.widgets":["data/*.*", "icons/*.png", "icons/*.jpg", "misc/*.png"],
+    "orangecontrib.ml.util.widgets.framework":["data/*.*", "icons/*.png", "icons/*.jpg", "misc/*.png"],
 }
 
-NAMESPACE_PACAKGES = ["oasys",
-                      "oasys.ml",
-                      "oasys.ml.widgets",
+NAMESPACE_PACAKGES = ["orangecontrib",
+                      "orangecontrib.ml",
+                      "orangecontrib.ml.widgets",
                       ]
 
 ENTRY_POINTS = {
-    'oasys.addons' : ("OASYS ML = oasys.ml",
+    'oasys.addons' : ("OASYS ML = orangecontrib.ml",
                       ),
     'oasys.widgets' : (
-        "OASYS ML = oasys.ml.widgets",
+        "OASYS ML = orangecontrib.ml.widgets.framework",
     ),
     #'oasys.menus': ("shadowadvancedtoolsmenu = orangecontrib.shadow_advanced_tools.menu",)
 }
