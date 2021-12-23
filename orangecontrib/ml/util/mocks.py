@@ -54,6 +54,12 @@ class MockWidget():
     def fixWeirdShadowBug(self):
         pass
 
+    def set_verbose(self, verbose=False):
+        self._verbose = verbose
+
+    def is_verbose(self):
+        return self._verbose==True
+
     def setStatusMessage(self, message):
         self.status_message(message)
 
